@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Web</title>
+    <style>
+        /* Estilos para el encabezado */
+        header {
+            background-color: #555;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos para el menú de navegación */
+        nav {
+            background-color: #f5f5f5;
+            border-bottom: 2px solid #ccc;
+        }
+
+        /* Estilos para los enlaces del menú de navegación */
+        nav a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilos para los enlaces del menú de navegación al pasar el mouse */
+        nav a:hover {
+            background-color: #eee;
+        }
+
+        /* Estilos para el contenedor principal */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Estilos para los contenedores de noticias */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .news-item {
+            width: 30%;
+            margin-bottom: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .news-item:hover {
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+        }
+
+        .news-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-item h3 {
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .news-item p {
+            margin: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <font face="Helvetica">
+        <header>
+            <h1>Bienvenido a mi Página Web</h1>
+        </header>
+
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="#">Inicio</a></td>
+                    <td><a href="#">Noticias</a></td>
+                    <td><a href="#">Acerca de mí</a></td>
+                    <td><a href="#">Contacto</a></td>
+                </tr>
+            </table>
+        </nav>
+
+        <div class="container">
+
+            <main>
+                <h2>Últimas noticias</h2>
+
+                <div class="news-container">
+                    <div class="news-item">
+                        <img src="https://picsum.photos/id/1006/600/400" alt="Noticia 1">
+                        <h3>Noticia 1</h3>
+                        <p>Aqui va un texto de la descripcion de la noticia.</p>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://picsum.photos/id/1005/600/400" alt="Noticia 2">
+                        <h3>Noticia 2</h3>
+                        <p>Aqui va un texto de la descripcion de la noticia.</p>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://picsum.photos/id/1015/600/400" alt="Noticia 3">
+                        <h3>Noticia 3</h3>
+                        <p>Aqui va un texto de la descripcion de la noticia.</p>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+        <footer>
+            <p>Derechos reservados &copy; 2023. Mi Página Web Dinámica.</p>
+        </footer>
+    </font>
+</body>
+</html>
